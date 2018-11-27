@@ -65,7 +65,7 @@ $ export REPO_URL="https://gerrit-googlesource.proxy.ustclug.org/git-repo"
 ## 拉取源码
 
 ```
-$ repo init -u git@github.com:fukehan/manifest.git -b ALPS-MP-N0.MP12-V1.32_DROI8173_TB_N
+$ repo init --no-repo-verify -u git@github.com:fukehan/manifest.git -b ALPS-MP-N0.MP12-V1.32_DROI8173_TB_N
 $ repo sync
 $ repo start --all ALPS-MP-N0.MP12-V1.32_DROI8173_TB_N
 ```
