@@ -1,36 +1,6 @@
-# git/repo环境配置
-
-[TOC]
-
-## 安装git
-
-已知ubuntu14.04使用的git（版本1.9）版本过低，配合gerrit（版本2.12）使用有bug，请安装最新的git，命令如下：
-
-```
-$ sudo add-apt-repository ppa:git-core/ppa
-$ sudo apt-get update
-$ sudo apt-get install git
-$ git version
-git version 2.11.0
-```
-
-PS. ubuntu 16.04官方源中的git无此问题，可直接使用`sudo apt-get install git`安装即可。
-
-### 配置Git
-
-请把下面的`yourname`替换为自己的名字和邮箱。
-
-```
-$ git config --global user.email "yourname@email.com"
-$ git config --global user.name "yourname"
-$ git config --global core.editor vim
-```
-
-参考：[更多配置](https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git)
+# repo环境配置
 
 ### 生成ssh-key
-
-请把下面的`yourname`替换为自己的名字。
 
 ```
 $ ssh-keygen -t rsa -b 4096 -C "yourname@email.com"
@@ -57,10 +27,6 @@ $ chmod a+x ~/bin/repo
 ```
 $ export REPO_URL="https://gerrit-googlesource.proxy.ustclug.org/git-repo"
 ```
-
-这是一个repo url 代理。
-
-
 
 ## 拉取源码
 
