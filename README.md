@@ -1,6 +1,8 @@
 # repo环境配置
 
-### 生成ssh-key
+## 仅支持 Ubuntu 14.04 编译，其他OS或版本未验证过
+
+## 生成ssh-key
 
 ```
 $ ssh-keygen -t rsa -b 4096 -C "yourname@email.com"
@@ -35,6 +37,7 @@ $ repo init --no-repo-verify -u git@github.com:fukehan/manifest.git -b ALPS-MP-N
 $ repo sync
 $ repo start --all ALPS-MP-N0.MP12-V1.32_DROI8173_TB_N
 ```
+以上仅为示例，具体分支请联系进行确认
 
 ## 重要事项
 
@@ -50,5 +53,6 @@ github 有三个目录没有上传，请完整拉完源码后，手动从其他�
 ```
 $ ./mk -d -f pn17662_gb_kttx n
 ```
+（以上仅为示例，具体分支请联系进行确认！！！）
 
 
